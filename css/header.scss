@@ -1,0 +1,21 @@
+header {
+	position: sticky;
+	top: 0px;
+	padding: 0px 0px;
+	border-radius: 0px;
+	box-shadow: none;
+	z-index: 50;
+	margin: 0 auto;
+	display: inline-block;
+
+	& * {
+		padding: 0px 1px !important;
+	}
+
+	& .hide {
+		transform: translateY(-99%);
+		& :hover {
+			top: 0;
+		}
+	}
+}

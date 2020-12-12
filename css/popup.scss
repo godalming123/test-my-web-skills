@@ -1,0 +1,27 @@
+.left {/*poup on the left*/
+	left: 0px;
+	height: 100%;
+}
+
+.popup {
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	box-shadow: var(--shadow);
+	max-width: 100%;
+	max-height: 100%;
+	position: fixed;
+	z-index: 10;
+	/*resize: both;*/
+	overflow: auto;
+}
+
+.popup, a {
+    padding: 5px, 5px;
+}
+
+.hide {
+    transform: translate(50%, 100%) scale(0) !important;
+    opacity: 0 !important;
+    box-shadow: 0px 0px 0px 0px;
+}

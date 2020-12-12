@@ -1,0 +1,46 @@
+:root {
+  --background: rgb(0, 0, 0);
+  --color: rgb(256, 256, 256);
+  --transition: 1s;
+  --border-radius: 5px;
+  --background-image: url(http://2.bp.blogspot.com/-dNvb_V1Wpkc/URjGbMyslWI/AAAAAAAAMr0/GWr6_JuXJNs/s1600/Canada+Toronto.jpeg);
+  --blur: 3px;
+  --shadow: 0px 0px 4px 3px rgba(256,256,256,1);
+  margin: 0 auto;
+}
+
+* {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  border-radius: var(--border-radius);
+  background: var(--background);
+  color: var(--color);
+}
+
+a, button {
+  cursor: pointer;
+  padding: 1px 1px;
+  display: inline-block;
+}
+
+a:hover, button:hover {
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+
+/*others*/
+footer {
+  font-size: 8px;
+}
+
+.disabled {
+  cursor: not-allowed;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.disabled * {
+  pointer-events: none;
+  opacity: 50;
+}
+/*# sourceMappingURL=style.css.map */

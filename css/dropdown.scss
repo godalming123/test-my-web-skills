@@ -1,0 +1,26 @@
+dropdown {
+	z-index: 50;
+	position: relative;
+	display: inline-block;
+	padding: 0px 0px;
+
+	&:hover {
+		box-shadow: var(--shadow);
+		& > content {
+    	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		}
+	}
+
+	&::after {
+    content: "↓";
+	}
+}
+
+content {
+    top: 100%;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    z-index: 100;
+    position: absolute;
+    padding: 3px 3px;
+}

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+dropdown {
+  z-index: 50;
+  position: relative;
+  display: inline-block;
+  padding: 0px 0px;
+}
+
+dropdown:hover {
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+
+dropdown:hover > content {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+dropdown::after {
+  content: "↓";
+}
+
+content {
+  top: 100%;
+  left: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  z-index: 100;
+  position: absolute;
+  padding: 3px 3px;
+}
+/*# sourceMappingURL=dropdown.css.map */

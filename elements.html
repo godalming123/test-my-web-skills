@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<head>
+<!--title-->
+<title>Whizz-Apps!</title>
+<!--file links-->
+<script defer type="module" src="project specefic js.js"></script>
+<script defer type="text/javascript" src="js/logic.js"></script>
+<link rel="icon" type="image/svg" href="icon.svg">
+<!--css-->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/popup.css" rel="stylesheet">
+<link href="css/header.css" rel="stylesheet">
+<link href="css/dropdown.css" rel="stylesheet">
+<link href="css/nice-lookinng scrollbar.css" rel="stylesheet">
+<link href="css/grid.css" rel="stylesheet">
+<!--meta tags-->
+<meta charset="utf-8">
+<meta name="veiwport" content="width=device-width, initail-scale=0.1">
+<meta property="og:url" content="https://whizz-apps.com">
+<meta property="og:site_name" content="whizz-apps - the best free online gaming and app platform">
+<meta name="description" content="whizz-apps apps is a browser app platform allowing for no download and instant apps, simply click sign up and browse on your favourite apps all for free!">
+</head>
+
+<body>
+<header>
+    <dropdown>
+			a dropdown
+      <content>
+				<a onclick="showOrHide('test-popup')">open test popup</a>
+				<a class="disabled">dasabled</a>
+        <dropdown>
+					another dropdown with lots of text
+					<content>
+						some content
+					</content>
+				</dropdown>
+       </content>
+		</dropdown>
+		
+    <dropdown>
+        settings
+        <content id="settingsContent"></content>
+    </dropdown><!--settings auto genarated by js-->
+</header>
+<!--footer-->
+<footer>
+    <button onclick="showOrHide('#test-popup')" style="font-size: 19px; float: left;">?</button>
+    <label style="right: 5px;">All Rights Reserved</label>
+    <label id="date"></label>
+</footer>
+
+<!--hidden popups-->
+
+<div class="popup" id="test-popup hide">
+		a test popup
+		<a onclick="showOrHide('#test-popup')">hide</a>
+</div>
+</body>
