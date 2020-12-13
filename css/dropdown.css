@@ -1,12 +1,23 @@
-dropdown {
-  position: relative;
-  background: none;
-  z-index: 50;
-  display: inline-block;
-  padding: 0px 0px;
+content {
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  position: absolute;
+  background: var(--shade-light);
+  /*hide*/
+  opacity: 0;
+  -webkit-transform: translateY(-20%);
+          transform: translateY(-20%);
+  pointer-events: none;
 }
 
-dropdown label * {
+dropdown {
+  position: relative;
+  z-index: 50;
+  display: inline-block;
+}
+
+dropdown label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,9 +28,12 @@ dropdown:hover {
           box-shadow: var(--shadow);
 }
 
-dropdown:hover content {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+dropdown:hover > content {
+  /*show*/
+  -webkit-transform: initial;
+          transform: initial;
+  opacity: initial;
+  pointer-events: initial;
 }
 
 dropdown:hover::after {
@@ -42,15 +56,5 @@ dropdown::after {
   color: var(--shade-light);
   margin-right: 5px;
   /*stop from going outside dropdown*/
-}
-
-content {
-  top: 100%;
-  left: 0;
-  z-index: 100;
-  position: absolute;
-  background: var(--shade-light);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 /*# sourceMappingURL=dropdown.css.map */

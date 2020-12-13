@@ -1,21 +1,34 @@
+content {
+	top: 100%;
+	left: 0;
+	z-index: 100;
+	position: absolute;
+
+	background: var(--shade-light);
+	/*hide*/
+	opacity: 0;
+	transform: translateY(-20%);
+	pointer-events: none;
+}
+
 dropdown {
 	position: relative;
-	background: none;
 	z-index: 50;
 	display: inline-block;
-	padding: 0px 0px;
 
-	label * {
+	label {
 		display: flex;
 	}
 
 	&:hover {
 		box-shadow: var(--shadow);
-		content {
-    	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		& > content {/*show*/
+			transform: initial;
+			opacity: initial;
+			pointer-events: initial;
 		}
 		&::after {
-			clip-path: polygon(0 0, 100% 0, 50% 25%, 50% 75%, 100% 100%, 0 100%, 50% 75%, 50% 25%);;
+			clip-path: polygon(0 0, 100% 0, 50% 25%, 50% 75%, 100% 100%, 0 100%, 50% 75%, 50% 25%);
 		}
 	}
 
@@ -33,14 +46,4 @@ dropdown {
 		color: var(--shade-light);
 		margin-right: 5px;/*stop from going outside dropdown*/
 	}
-}
-
-content {
-	top: 100%;
-	left: 0;
-	z-index: 100;
-	position: absolute;
-
-	background: var(--shade-light);
-	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
