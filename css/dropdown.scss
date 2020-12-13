@@ -6,21 +6,29 @@ dropdown {
 
 	&:hover {
 		box-shadow: var(--shadow);
-		& > content {
+		content {
     	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		}
+		&::after {
+			transform: translateY(20%);
 		}
 	}
 
 	&::after {
-    content: "↓";
+		content: url("https://upload.wikimedia.org/wikipedia/commons/c/c7/Antu-go-down-24.svg");
+		float: right;
+		width: 15px;
+		transform: translateY(10%);
+		transition: 0.5s ease;
+		transition-delay: var(--transition);
 	}
 }
 
 content {
-    top: 100%;
-    left: 0;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    z-index: 100;
-    position: absolute;
-    padding: 3px 3px;
+	top: 100%;
+	left: 0;
+	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	z-index: 100;
+	position: absolute;
+	padding: 3px 3px;
 }

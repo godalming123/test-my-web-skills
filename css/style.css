@@ -1,5 +1,5 @@
 :root {
-  --background: rgb(0, 0, 0);
+  --background: rgb(39, 39, 39);
   --color: rgb(256, 256, 256);
   --transition: 1s;
   --border-radius: 5px;
@@ -15,6 +15,10 @@
   border-radius: var(--border-radius);
   background: var(--background);
   color: var(--color);
+}
+
+*:hover {
+  z-index: 200;
 }
 
 a, button {
