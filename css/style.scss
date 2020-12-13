@@ -1,24 +1,29 @@
 :root {
-    --background: rgb(39, 39, 39);
-    --color: rgb(256, 256, 256);
-    --transition: 1s;
-    --border-radius: 5px;
-		--background-image: url(http://2.bp.blogspot.com/-dNvb_V1Wpkc/URjGbMyslWI/AAAAAAAAMr0/GWr6_JuXJNs/s1600/Canada+Toronto.jpeg);
-    --blur: 3px;
-    --shadow: 0px 0px 4px 3px rgba(256,256,256,1);
-    margin: 0 auto;
+	/*colours*/
+	--HS-color: 0, 0%;
+	--shade-white: hsl(var(--HS-color), 100%);
+	--shade-light: hsl(var(--HS-color), 20%);
+	--shade-dark: hsl(var(--HS-color), 10%);
+
+	--transition: 1s;
+	--border-radius: 5px;
+	--background-image: url(http://2.bp.blogspot.com/-dNvb_V1Wpkc/URjGbMyslWI/AAAAAAAAMr0/GWr6_JuXJNs/s1600/Canada+Toronto.jpeg);
+	--shadow: 0px 0px 4px 3px rgba(256,256,256,1);
+
+	margin: 0 auto;
+	background: var(--shade-dark);
 }
 
 * {
 	transition: var(--transition);
 	border-radius: var(--border-radius);
-	background: var(--background);
-	color: var(--color);
+	background: inherit;
+	color: var(--shade-white);
 	&:hover {z-index: 200}
 }
 
 a, button {
-  cursor: pointer;
+	cursor: pointer;
 	padding: 1px 1px;
 	display: inline-block;
 	&:hover {

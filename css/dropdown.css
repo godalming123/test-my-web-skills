@@ -1,8 +1,15 @@
 dropdown {
-  z-index: 50;
   position: relative;
+  background: none;
+  z-index: 50;
   display: inline-block;
   padding: 0px 0px;
+}
+
+dropdown label * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 dropdown:hover {
@@ -16,29 +23,34 @@ dropdown:hover content {
 }
 
 dropdown:hover::after {
-  -webkit-transform: translateY(20%);
-          transform: translateY(20%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 25%, 50% 75%, 100% 100%, 0 100%, 50% 75%, 50% 25%);
+          clip-path: polygon(0 0, 100% 0, 50% 25%, 50% 75%, 100% 100%, 0 100%, 50% 75%, 50% 25%);
 }
 
 dropdown::after {
-  content: url("https://upload.wikimedia.org/wikipedia/commons/c/c7/Antu-go-down-24.svg");
+  content: ".";
+  /*make content render*/
   float: right;
-  width: 15px;
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
+  width: 10px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   -webkit-transition-delay: var(--transition);
           transition-delay: var(--transition);
+  -webkit-clip-path: polygon(0 25%, 100% 25%, 50% 75%, 50% 75%, 50% 75%, 50% 75%, 50% 75%, 50% 75%);
+          clip-path: polygon(0 25%, 100% 25%, 50% 75%, 50% 75%, 50% 75%, 50% 75%, 50% 75%, 50% 75%);
+  background: var(--shade-light);
+  color: var(--shade-light);
+  margin-right: 5px;
+  /*stop from going outside dropdown*/
 }
 
 content {
   top: 100%;
   left: 0;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   z-index: 100;
   position: absolute;
-  padding: 3px 3px;
+  background: var(--shade-light);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 /*# sourceMappingURL=dropdown.css.map */
