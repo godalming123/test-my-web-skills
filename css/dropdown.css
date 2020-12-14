@@ -57,4 +57,9 @@ dropdown::after {
   margin-right: 5px;
   /*stop from going outside dropdown*/
 }
+
+#settingsContent > * + * {
+  border-top: 1px solid var(--shade-white);
+  border-radius: 0;
+}
 /*# sourceMappingURL=dropdown.css.map */
