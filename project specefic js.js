@@ -14,13 +14,13 @@ main.CreateSetting(
 );
 
 main.CreateSetting(
-	"animation duration",
-	"--transition",
+	"roundness",
+	"--border-radius",
 	function (settingsInput) {
 		settingsInput.setAttribute("min", 0);
-		settingsInput.setAttribute("max", 4);
-		settingsInput.setAttribute("value", 1);
+		settingsInput.setAttribute("max", 20);
+		settingsInput.setAttribute("value", 5);
 	},
-	"s",
+	"px",
 	"range"
 );
