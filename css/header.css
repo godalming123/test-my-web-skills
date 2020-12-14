@@ -12,7 +12,6 @@ header {
   width: fit-content;
   -webkit-box-shadow: 0 10 4 2 rgba(0, 0, 0, 0.678);
           box-shadow: 0 10 4 2 rgba(0, 0, 0, 0.678);
-  background: none;
 }
 
 header * {
