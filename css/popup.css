@@ -19,15 +19,15 @@
   overflow: auto;
 }
 
-.popup, a {
-  padding: 5px, 5px;
-}
-
-.hide {
-  -webkit-transform: translate(50%, 100%) scale(0) !important;
-          transform: translate(50%, 100%) scale(0) !important;
-  opacity: 0 !important;
+.popup.hide {
+  -webkit-transform: translate(50%, 100%) scale(0);
+          transform: translate(50%, 100%) scale(0);
+  opacity: 0;
   -webkit-box-shadow: 0px 0px 0px 0px;
           box-shadow: 0px 0px 0px 0px;
+}
+
+.popup, a {
+  padding: 5px, 5px;
 }
 /*# sourceMappingURL=popup.css.map */
