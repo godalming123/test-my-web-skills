@@ -43,3 +43,20 @@ footer {
     opacity: 50;
 	}
 }
+
+/*scroll snapping*/
+.scroll-snap {
+	overflow: scroll;
+	
+	* {
+		scroll-snap-align: start;
+		margin-top: 10px;
+	}
+
+	&.y {
+		scroll-snap-type: y mandatory;
+	}
+	&.x {
+		scroll-snap-type: x mandatory;
+	}
+}
