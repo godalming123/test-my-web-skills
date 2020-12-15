@@ -4,7 +4,7 @@ content {
 	z-index: 100;
 	position: absolute;
 
-	background: var(--shade-light);
+	background: var(--shade3);
 	/*hide*/
 	opacity: 0;
 	transform: translateY(-20%);
@@ -42,8 +42,7 @@ dropdown {
 		transition-delay: var(--transition);
 		
 		clip-path: polygon(0 25%, 100% 25%, 50% 75%, 50% 75%, 50% 75%, 50% 75%, 50% 75%, 50% 75%);
-		background: var(--shade-light);
-		color: var(--shade-light);
+		background: var(--shade3);
 		margin-right: 5px;/*stop from going outside dropdown*/
 	}
 }
