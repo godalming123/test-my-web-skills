@@ -8,6 +8,7 @@
   --border-radius: 5px;
   --background-image: url(http://2.bp.blogspot.com/-dNvb_V1Wpkc/URjGbMyslWI/AAAAAAAAMr0/GWr6_JuXJNs/s1600/Canada+Toronto.jpeg);
   --shadow: 0px 0px 4px 3px var(--shade1);
+  color: var(--shade1);
   margin: 0 auto;
   background: var(--shade2);
 }
@@ -36,7 +37,7 @@ a:hover, button:hover {
 
 /*others*/
 footer {
-  font-size: 8px;
+  font-size: 2vh;
 }
 
 .disabled {
