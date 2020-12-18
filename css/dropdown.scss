@@ -43,7 +43,7 @@ dropdown {
 		
 		clip-path: polygon(0 25%, 100% 25%, 50% 75%, 50% 75%, 50% 75%, 50% 75%, 50% 75%, 50% 75%);
 		background: var(--shade3);
-		margin-right: 5px;/*stop from going outside dropdown*/
+		margin-right: 0.11vh;/*stop from going outside dropdown*/
 	}
 }
 
