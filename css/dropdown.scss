@@ -48,7 +48,7 @@ dropdown {
 }
 
 #settingsContent > * + * {
-	border-top: 1px solid var(--shade-white);
+	border-top: 0.25vh solid var(--lighten);
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;
 }
