@@ -23,20 +23,16 @@
 
 a, button {
 	cursor: pointer;
-	padding: 1px 1px;
 	display: inline-block;
-	&:hover {
-		box-shadow: var(--shadow);
-	}
+	&:hover {box-shadow: var(--shadow);}
 }
-footer {
-	font-size: 2vh;
-}
+
+footer {font-size: 2vh;}
 
 .disabled {
 	cursor: not-allowed;
 	filter: grayscale(100%);
-	& * {
+	* {
 		pointer-events: none;
     opacity: 50;
 	}
@@ -50,12 +46,8 @@ footer {
 		margin-top: 10px;
 	}
 
-	&.y {
-		scroll-snap-type: y mandatory;
-	}
-	&.x {
-		scroll-snap-type: x mandatory;
-	}
+	&.y {scroll-snap-type: y mandatory;}
+	&.x {scroll-snap-type: x mandatory;}
 }
 
 /*input {
