@@ -36,8 +36,8 @@ dropdown {
 		content: ".";/*make content render*/
 
 		float: right;
-		width: 10px;
 
+		width: var(--font-size);
 		transition: 0.5s ease;
 		transition-delay: var(--transition);
 		
@@ -49,5 +49,6 @@ dropdown {
 
 #settingsContent > * + * {
 	border-top: 1px solid var(--shade-white);
-	border-radius: 0;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
 }

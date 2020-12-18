@@ -4,13 +4,16 @@
   --shade1: hsl(var(--HS-color), 100%);
   --shade3: hsl(var(--HS-color), 20%);
   --shade2: hsl(var(--HS-color), 10%);
-  --transition: 1s;
-  --border-radius: 5px;
+  --lighten: hsla(0, 0%, 100%, 10%);
+  --font-size: 3.5vh;
+  --transition: none;
+  --border-radius: none;
   --background-image: url(http://2.bp.blogspot.com/-dNvb_V1Wpkc/URjGbMyslWI/AAAAAAAAMr0/GWr6_JuXJNs/s1600/Canada+Toronto.jpeg);
-  --shadow: 0px 0px 4px 3px var(--shade1);
-  color: var(--shade1);
+  --shadow: 0 0 0.5vh 0.25vh var(--shade1);
   margin: 0 auto;
   background: var(--shade2);
+  font-size: var(--font-size);
+  color: var(--shade1);
 }
 
 * {
@@ -35,7 +38,6 @@ a:hover, button:hover {
           box-shadow: var(--shadow);
 }
 
-/*others*/
 footer {
   font-size: 2vh;
 }
@@ -49,6 +51,10 @@ footer {
 .disabled * {
   pointer-events: none;
   opacity: 50;
+}
+
+section {
+  width: 100%;
 }
 
 /*scroll snapping*/
@@ -70,4 +76,26 @@ footer {
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
 }
+
+/*input {
+	&[type="range"] {
+		width: 10vh;
+		cursor: pointer;
+		-webkit-appearance: none;
+		&::-webkit-slider-runnable-track {
+			background: var(--lighten);
+		}
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			background: var(--lighten);
+			transition: 0.15s ease-in-out;
+			height: var(--font-size);
+			width: var(--font-size);
+			transform: scale(1.2);
+			&:hover {
+				transform: scale(1.3);
+			}
+		}
+	}
+}*/
 /*# sourceMappingURL=style.css.map */
