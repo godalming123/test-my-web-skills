@@ -1,21 +1,17 @@
-:root {	
+:root {
+	/*genaral vars*/
+	--font-size: 3.5vh;
+	--shadow: 0 0 0.5vh 0.25vh var(--shade1);
 	/*colours*/
 	--HS-color: 0, 0%;
 	--shade1: hsl(var(--HS-color), 100%);
 	--shade3: hsl(var(--HS-color), 20%);
 	--shade2: hsl(var(--HS-color), 10%);
 	--lighten: hsla(0, 0%, 100%, 10%);
-
-	--font-size: 3.5vh;
-	--transition: none;
-	--border-radius: none;
-	--background-image: url(http://2.bp.blogspot.com/-dNvb_V1Wpkc/URjGbMyslWI/AAAAAAAAMr0/GWr6_JuXJNs/s1600/Canada+Toronto.jpeg);
-	--shadow: 0 0 0.5vh 0.25vh var(--shade1);
-
-	margin: 0 auto;
 	background: var(--shade2);
-	font-size: var(--font-size);
 	color: var(--shade1);
+
+	font-size: var(--font-size);
 }
 
 * {
