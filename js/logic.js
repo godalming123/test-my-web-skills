@@ -35,6 +35,6 @@ export function CreateSetting(name, cssVarToChange, extraCode, addToVariable, se
 }
 
 // functions for navigation and show or hide system
-function showOrHide (ID) {
+export function showOrHide (ID) {
 	document.querySelector (ID).classList.toggle("hide");
 }
