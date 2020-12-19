@@ -15,17 +15,7 @@ footer {font-size: 2vh;}
 	}
 }
 
-.scroll-snap {
-	overflow: scroll;
 
-	* {
-		scroll-snap-align: start;
-		margin-top: 10px;
-	}
-
-	&.y {scroll-snap-type: y mandatory;}
-	&.x {scroll-snap-type: x mandatory;}
-}
 
 /*input {
 	&[type="range"] {

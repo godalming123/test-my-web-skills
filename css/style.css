@@ -23,25 +23,6 @@ footer {
   opacity: 50;
 }
 
-.scroll-snap {
-  overflow: scroll;
-}
-
-.scroll-snap * {
-  scroll-snap-align: start;
-  margin-top: 10px;
-}
-
-.scroll-snap.y {
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-}
-
-.scroll-snap.x {
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-}
-
 /*input {
 	&[type="range"] {
 		width: 10vh;

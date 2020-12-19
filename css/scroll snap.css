@@ -1,0 +1,19 @@
+.scroll-snap {
+  overflow: scroll;
+}
+
+.scroll-snap * {
+  scroll-snap-align: start;
+  margin-top: 10px;
+}
+
+.scroll-snap.y {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+.scroll-snap.x {
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+/*# sourceMappingURL=scroll snap.css.map */

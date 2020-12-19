@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACZ,QAAQ,EAAE,MAAM;CAShB;;AAVD,AAGC,YAHW,CAGX,CAAC,CAAC;EACD,iBAAiB,EAAE,KAAK;EACxB,UAAU,EAAE,IAAI;CAChB;;AANF,AAQC,YARW,AAQV,EAAE,CAAC;EAAC,gBAAgB,EAAE,WAAW;CAAG;;AARtC,AASC,YATW,AASV,EAAE,CAAC;EAAC,gBAAgB,EAAE,WAAW;CAAG",
+    "sources": [
+        "scroll snap.scss"
+    ],
+    "names": [],
+    "file": "scroll snap.css"
+}
