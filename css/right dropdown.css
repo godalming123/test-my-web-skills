@@ -3,9 +3,12 @@ dropdown.right content {
           transform: translateY(0) translateX(-20%);
   top: 0;
   left: 100%;
+  min-height: 100%;
+  /*force height to be size of idropdown title*/
 }
 
 dropdown.right::after {
-  translate: rotate 90deg;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 /*# sourceMappingURL=right dropdown.css.map */
