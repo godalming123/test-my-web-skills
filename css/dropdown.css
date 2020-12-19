@@ -4,7 +4,6 @@ content {
   z-index: 100;
   position: absolute;
   background: var(--shade3);
-  /*hide*/
   opacity: 0;
   -webkit-transform: translateY(-20%);
           transform: translateY(-20%);
@@ -30,8 +29,8 @@ dropdown:hover {
 
 dropdown:hover > content {
   /*show*/
-  -webkit-transform: initial;
-          transform: initial;
+  -webkit-transform: initial !important;
+          transform: initial !important;
   opacity: initial;
   pointer-events: initial;
 }

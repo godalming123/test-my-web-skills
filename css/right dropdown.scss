@@ -1,0 +1,11 @@
+dropdown.right{
+	content {
+		transform: translateY(0) translateX(-20%);
+		top: 0;
+		left: 100%;
+	}
+
+	&::after {
+		translate: rotate (90deg);
+	}
+}

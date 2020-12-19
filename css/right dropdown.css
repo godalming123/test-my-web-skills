@@ -1,0 +1,11 @@
+dropdown.right content {
+  -webkit-transform: translateY(0) translateX(-20%);
+          transform: translateY(0) translateX(-20%);
+  top: 0;
+  left: 100%;
+}
+
+dropdown.right::after {
+  translate: rotate 90deg;
+}
+/*# sourceMappingURL=right dropdown.css.map */
