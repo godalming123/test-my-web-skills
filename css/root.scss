@@ -8,6 +8,7 @@
 	--shade3: hsl(var(--HS-color), 20%);
 	--shade2: hsl(var(--HS-color), 10%);
 	--lighten: hsla(0, 0%, 100%, 10%);
+	--background-lighten: hsla(var(--HS-color), 20%, 80%);
 	background: var(--shade2);
 	color: var(--shade1);
 
