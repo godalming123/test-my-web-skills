@@ -1,10 +1,18 @@
 .scroll-snap {
+  --spacing: 1vh;
   overflow: scroll;
+}
+
+.scroll-snap.align-center * {
+  scroll-snap-align: center;
+}
+
+.scroll-snap.align-end * {
+  scroll-snap-align: end;
 }
 
 .scroll-snap * {
   scroll-snap-align: start;
-  margin-top: 10px;
 }
 
 .scroll-snap.y {
@@ -12,8 +20,28 @@
       scroll-snap-type: y mandatory;
 }
 
+.scroll-snap.y * + * {
+  margin-top: var(--spacing);
+}
+
 .scroll-snap.x {
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.scroll-snap.x * + * {
+  margin-left: var(--spacing);
+}
+
+.scroll-snap.x * {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 90%;
+  /*for mobile*/
+  width: 30vh;
+  /*for desktop*/
 }
 /*# sourceMappingURL=scroll snap.css.map */

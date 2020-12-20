@@ -19,5 +19,6 @@
 	transition: var(--transition);
 	border-radius: var(--border-radius);
 	background: inherit;
-	&:hover {z-index: 200;}
+	scroll-behavior: smooth;
+	&:hover {z-index: 8;}
 }

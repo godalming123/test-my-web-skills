@@ -19,9 +19,10 @@
   transition: var(--transition);
   border-radius: var(--border-radius);
   background: inherit;
+  scroll-behavior: smooth;
 }
 
 *:hover {
-  z-index: 200;
+  z-index: 8;
 }
 /*# sourceMappingURL=root.css.map */
