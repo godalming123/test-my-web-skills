@@ -6,7 +6,12 @@
 	&.align-end * {scroll-snap-align: end;}
 	* {scroll-snap-align: start;}
 
-
+	*.title {
+		position: sticky;
+		left: 3vh;
+		top: 3vh;
+		flex-align: top;
+	}
 	&.y {
 		* + * {margin-top: var(--spacing);}
 		scroll-snap-type: y mandatory;
