@@ -1,8 +1,13 @@
-parrelex = document.querySelectorAll(".parrelex");
+parrelexs = document.querySelectorAll(".parrelex");
+
+parrelexs.forEach (parrelex => {
+	parrelex.style.zIndex = -1;
+})
 
 window.addEventListener("scroll", function() {
 	distance = window.scrollY;
 
-	parrelex.style.opacity = `${100-distance}%`;
-	parrelex.style.transform = `translateY(${distance * 0.3}px)`;
+	parrelexs.forEach (parrelex => {
+		parrelex.style.transform = `translateY(${distance * 0.5}px)`;
+	});
 });
