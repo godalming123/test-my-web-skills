@@ -23,6 +23,14 @@ footer {
   opacity: 50;
 }
 
+h1 {
+  font-size: 6vh;
+}
+
+h2 {
+  font-size: 4.5vh;
+}
+
 /*input {
 	&[type="range"] {
 		width: 10vh;
