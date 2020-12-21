@@ -1,3 +1,4 @@
+//vars
 var root = document.querySelector(":root");
 
 //functions
@@ -30,11 +31,19 @@ export function CreateSetting(name, cssVarToChange, extraCode, addToVariable, se
 
 	extraCode(settingsInput);
 
-	//updating everything when settings changes
+	// updating everything when settings changes
 	liveInputToCssVarAndLabel(settingsLabel, settingsInput, cssVarToChange, addToVariable);
 }
 
 // functions for navigation and show or hide system
-export function showOrHide (ID) {
-	document.querySelector (ID).classList.toggle("hide");
+function ShowOrHideBasedOnShowOrHidePropertyOfElement () {
+	document.getElementsByClassName(this.attributes.showOrHide)[0].classList.toggle("hide")
 }
+
+// executions
+document.querySelectorAll("*").forEach(item => {
+	item.attributes.showOrHide = item.getAttribute("show-or-hide");
+	if (item.attributes.showOrHide != null) {// if item has the show-ot-hide-property
+		item.addEventListener ("click", ShowOrHideBasedOnShowOrHidePropertyOfElement, false)
+	}
+})

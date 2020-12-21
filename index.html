@@ -5,7 +5,7 @@
 <title>test</title>
 <!--file links-->
 <script defer src="project specefic js.js"type="module"></script>
-<script defer src="js/logic.js"></script>
+<script src="js/logic.js"></script>
 <script defer src="js/parrelex.js"></script>
 <link rel="icon" type="image/svg" href="icon.svg">
 <!--css-->
@@ -33,7 +33,7 @@
     <dropdown>
 			a dropdown
       <content>
-				<a onclick="showOrHide('test-popup')">open test popup</a>
+				<a show-or-hide="test-popup"">open test popup</a>
 				<a class="disabled">disabled</a>
         <dropdown class="right">
 					another dropdown with lots of text
@@ -71,15 +71,15 @@
 
 <!--footer-->
 <footer>
-    <a onclick="showOrHide('#test-popup')">?</a>
+    <a show-or-hide="test-popup?</a>
     All Rights Reserved
     <label id="date"></label>
 </footer>
 
 <!--hidden popups-->
 
-<div class="popup" id="test-popup hide">
+<div class="popup test-popup">
 	a test popup
-	<a onclick="showOrHide('#test-popup')">hide</a>
+	<a show-or-hide="test-popup">hide</a>
 </div>
 </body>
