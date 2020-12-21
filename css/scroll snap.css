@@ -20,7 +20,7 @@
   position: sticky;
   left: 3vh;
   top: 3vh;
-  flex-align: top;
+  /*flex-align: top;*/
 }
 
 .scroll-snap.y {
@@ -51,5 +51,28 @@
   /*for mobile*/
   width: 30vh;
   /*for desktop*/
+}
+
+.scroll-snap.x {
+  /* after and before arrows*/
+}
+
+.scroll-snap.x::after, .scroll-snap.x::before {
+  background: rgba(0, 0, 0, 0.4);
+  position: -webkit-sticky;
+  position: sticky;
+  font-size: 10vh;
+  padding: 1vh;
+  z-index: 5;
+}
+
+.scroll-snap.x::after {
+  content: ">";
+  right: 0;
+}
+
+.scroll-snap.x::before {
+  content: "<";
+  left: 0;
 }
 /*# sourceMappingURL=scroll snap.css.map */
