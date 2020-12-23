@@ -5,12 +5,30 @@ content {
   position: absolute;
   background: var(--shade3);
   opacity: 0;
-  -webkit-transform: translateY(-20%);
-          transform: translateY(-20%);
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
   pointer-events: none;
 }
 
 dropdown {
+  --arrow-open: polygon(
+		0 0,
+		100% 0,
+		50% 25%,
+		50% 75%,
+		100% 100%,
+		0 100%,
+		50% 75%,
+		50% 25%);
+  --arrow-closed: polygon(
+		0 25%,
+		100% 25%,
+		50% 75%,
+		50% 75%,
+		50% 75%,
+		50% 75%,
+		50% 75%,
+		50% 75%);
   position: relative;
   z-index: 50;
   display: inline-block;
@@ -28,7 +46,6 @@ dropdown:hover {
 }
 
 dropdown:hover > content {
-  /*show*/
   -webkit-transform: initial !important;
           transform: initial !important;
   opacity: initial;
@@ -36,27 +53,25 @@ dropdown:hover > content {
 }
 
 dropdown:hover::after {
-  -webkit-clip-path: polygon(0 0, 100% 0, 50% 25%, 50% 75%, 100% 100%, 0 100%, 50% 75%, 50% 25%);
-          clip-path: polygon(0 0, 100% 0, 50% 25%, 50% 75%, 100% 100%, 0 100%, 50% 75%, 50% 25%);
+  -webkit-clip-path: var(--arrow-open);
+          clip-path: var(--arrow-open);
 }
 
 dropdown::after {
-  content: ".";
-  /*make content render*/
-  float: right;
-  width: var(--font-size);
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   -webkit-transition-delay: var(--transition);
           transition-delay: var(--transition);
-  -webkit-clip-path: polygon(0 25%, 100% 25%, 50% 75%, 50% 75%, 50% 75%, 50% 75%, 50% 75%, 50% 75%);
-          clip-path: polygon(0 25%, 100% 25%, 50% 75%, 50% 75%, 50% 75%, 50% 75%, 50% 75%, 50% 75%);
-  background: var(--shade3);
+  float: right;
+  width: var(--font-size);
+  content: ".";
   margin-right: 0.11vh;
-  /*stop from going outside dropdown*/
+  -webkit-clip-path: var(--arrow-closed);
+          clip-path: var(--arrow-closed);
+  background: var(--shade3);
 }
 
-#settingsContent > * + * {
+#settingsContent * + * {
   border-top: 0.25vh solid var(--lighten);
   border-top-right-radius: 0;
   border-top-left-radius: 0;
