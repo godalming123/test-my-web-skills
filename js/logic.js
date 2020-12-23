@@ -1,5 +1,7 @@
 //vars
 var root = document.querySelector(":root");
+var popupContainer = document.querySelector(".popups");
+var popups = document.querySelectorAll(".popups > *")
 
 //functions
 export function append(element, placeToAppend) {
@@ -38,6 +40,7 @@ export function CreateSetting(name, cssVarToChange, extraCode, addToVariable, se
 // functions for navigation and show or hide system
 function ShowOrHideBasedOnShowOrHidePropertyOfElement () {
 	document.getElementsByClassName(this.attributes.showOrHide)[0].classList.toggle("hide")
+	popupContainer.classList.toggle("backdrop")
 }
 
 // executions
@@ -47,3 +50,10 @@ document.querySelectorAll("*").forEach(item => {
 		item.addEventListener ("click", ShowOrHideBasedOnShowOrHidePropertyOfElement, false)
 	}
 })
+
+popupContainer.addEventListener("click", () => {
+	popups.forEach(popup => {
+		popup.classList.add("hide");
+	})
+	popupContainer.classList.remove("backdrop");
+}, false)
