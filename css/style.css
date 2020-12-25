@@ -8,6 +8,13 @@ a:hover, button:hover {
           box-shadow: var(--shadow);
 }
 
+form {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 footer {
   font-size: 2vh;
 }

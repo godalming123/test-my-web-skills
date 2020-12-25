@@ -4,6 +4,11 @@ a, button {
 	&:hover {box-shadow: var(--shadow);}
 }
 
+form {
+	display: block;
+	width: max-content;
+}
+
 footer {font-size: 2vh;}
 
 .disabled {
