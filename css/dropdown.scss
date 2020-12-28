@@ -64,7 +64,7 @@ dropdown {
 	}
 }
 
-#settingsContent * + * {
+#settingsContent  > * + * {
 	border-top: 0.25vh solid var(--lighten);
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;
