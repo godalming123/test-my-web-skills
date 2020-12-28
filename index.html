@@ -31,15 +31,15 @@
 </head>
 
 <body>
-<header>
-	<dropdown>
+<header><!--we need to add onclick to all dropfowns inside here so they work on touch-->
+	<dropdown oonclick="">
 		my figma
 		<content>
 			<a target="_blank" class="flashy" href="https://www.figma.com/file/4jms082w32BUtJtei6gCK4/all-files?node-id=258%3A1595">my figma portfolio</a>
 		</content>
 	</dropdown>
 
-    <dropdown>
+    <dropdown onclick="">
 			a dropdown
       <content>
 				<a show-or-hide="test-popup"">open test popup</a>
@@ -53,7 +53,7 @@
        </content>
 		</dropdown>
 		
-    <dropdown>
+    <dropdown onclick="">
         settings
         <content id="settingsContent"></content>
     </dropdown><!--settings auto genarated by js-->
