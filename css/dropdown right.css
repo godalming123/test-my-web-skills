@@ -1,6 +1,8 @@
 dropdown.right content {
-  -webkit-transform: translateY(-20%) translateX(0);
-          transform: translateY(-20%) translateX(0);
+  -webkit-transform: rotateY(-90deg);
+          transform: rotateY(-90deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
   top: 0;
   left: 100%;
   min-height: 100%;

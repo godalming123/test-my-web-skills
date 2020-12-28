@@ -6,9 +6,8 @@ content {
 	position: absolute;
 
 	background: var(--shade3);
-	opacity: 0;
-	transform: translateX(-20%);
-	pointer-events: none;
+	transform: rotateX(-90deg);
+	transform-origin: top;
 }
 
 dropdown {
@@ -43,8 +42,6 @@ dropdown {
 		box-shadow: var(--shadow);
 		& > content {//hovered dropdown > content
 			transform: initial !important;
-			opacity: initial;
-			pointer-events: initial;
 		}
 		&::after {//hovered dropdown::after
 			clip-path: var(--arrow-open);
