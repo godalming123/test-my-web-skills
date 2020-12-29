@@ -1,5 +1,5 @@
 .futuristic {
-  --shadow: 10px 10px var(--shade1);
+  --shadow: -2px 2px var(--shade1);
   --font-family: "Aviano Future", serif;
   --notch-clip-path: polygon(
 		0 0,
@@ -14,13 +14,13 @@
           clip-path: var(--notch-clip-path);
   border-top-left-radius: var(--border-radius-left);
   border-bottom-left-radius: var(--border-radius-left);
-  overflow: hidden;
   border: 0.1vh solid white;
+  overflow: hidden;
   padding-left: 3vh;
   padding-right: 3vh;
 }
 
-.futuristic a:hover, .futuristic button:hover {
+.futuristic a:hover, .futuristic button:hover, .futuristic input[type="submit"]:hover {
   -webkit-animation: futuristic 1s;
           animation: futuristic 1s;
 }

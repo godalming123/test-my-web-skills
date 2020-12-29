@@ -1,4 +1,4 @@
-a, button {
+a, button, input[type="submit"] {
 	cursor: pointer;
 	display: inline-block;
 	&:hover {box-shadow: var(--shadow);}

@@ -1,9 +1,9 @@
-a, button {
+a, button, input[type="submit"] {
   cursor: pointer;
   display: inline-block;
 }
 
-a:hover, button:hover {
+a:hover, button:hover, input[type="submit"]:hover {
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
 }
