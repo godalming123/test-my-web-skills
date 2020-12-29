@@ -64,6 +64,7 @@
   font-size: 10vh;
   padding: 1vh;
   z-index: 5;
+  cursor: pointer;
 }
 
 .scroll-snap.x::after {
