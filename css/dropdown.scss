@@ -38,7 +38,7 @@ dropdown {
 		display: flex;
 	}
 
-	&:hover {//hovered dropdown
+	&:hover, &:focus-within {//hovered dropdown
 		box-shadow: var(--shadow);
 		& > content {//hovered dropdown > content
 			transform: initial !important;

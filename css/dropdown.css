@@ -40,17 +40,17 @@ dropdown label {
   display: flex;
 }
 
-dropdown:hover {
+dropdown:hover, dropdown:focus-within {
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
 }
 
-dropdown:hover > content {
+dropdown:hover > content, dropdown:focus-within > content {
   -webkit-transform: initial !important;
           transform: initial !important;
 }
 
-dropdown:hover::after {
+dropdown:hover::after, dropdown:focus-within::after {
   -webkit-clip-path: var(--arrow-open);
           clip-path: var(--arrow-open);
 }
