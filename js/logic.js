@@ -2,6 +2,9 @@
 var root = document.querySelector(":root");
 var popupContainer = document.querySelector(".popups");
 var popups = document.querySelectorAll(".popups > *")
+var settingsContent = document.getElementById("settings").appendChild(
+	document.createElement("content")
+);
 
 //functions
 export function append(element, placeToAppend) {
@@ -21,8 +24,6 @@ export function liveInputToCssVarAndLabel (label, input, cssVar, addToCssVar) {
 }
 
 export function CreateSetting(name, cssVarToChange, extraCode, addToVariable, settingType = "range") {
-	var settingsContent = document.querySelector("#settingsContent");
-
 	var settingsContainer = settingsContent.appendChild(document.createElement("label"));
 	settingsContainer.append(name)
 	
