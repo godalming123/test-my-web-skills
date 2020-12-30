@@ -1,11 +1,18 @@
-a, button {
+a, button, input[type="submit"] {
   cursor: pointer;
   display: inline-block;
 }
 
-a:hover, button:hover {
+a:hover, button:hover, input[type="submit"]:hover {
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
+}
+
+form {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 footer {
@@ -21,6 +28,14 @@ footer {
 .disabled * {
   pointer-events: none;
   opacity: 50;
+}
+
+h1 {
+  font-size: 6vh;
+}
+
+h2 {
+  font-size: 4.5vh;
 }
 
 /*input {

@@ -10,7 +10,7 @@
 		position: sticky;
 		left: 3vh;
 		top: 3vh;
-		flex-align: top;
+		/*flex-align: top;*/
 	}
 	&.y {
 		* + * {margin-top: var(--spacing);}
@@ -26,4 +26,26 @@
 			width: 30vh;/*for desktop*/
 		}
 	}
+}
+
+.scroll-snap.x {/* after and before arrows*/
+	&::after, &::before {
+		background: rgba(0, 0, 0, 0.4);
+		position: sticky;
+		font-size: 10vh;
+		padding: 1vh;
+		z-index: 5;
+		cursor: pointer;
+	}
+
+	&::after {
+		content: ">";
+		right: 0;
+	}
+	&::before {
+		content: "<";
+		left: 0;
+	}
+
+
 }

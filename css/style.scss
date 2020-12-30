@@ -1,7 +1,13 @@
-a, button {
+a, button, input[type="submit"] {
 	cursor: pointer;
 	display: inline-block;
+	
 	&:hover {box-shadow: var(--shadow);}
+}
+
+form {
+	display: block;
+	width: max-content;
 }
 
 footer {font-size: 2vh;}
@@ -13,6 +19,13 @@ footer {font-size: 2vh;}
 		pointer-events: none;
     opacity: 50;
 	}
+}
+
+h1 {
+	font-size: 6vh;
+}
+h2 {
+	font-size: 4.5vh;
 }
 
 /*input {

@@ -1,6 +1,7 @@
 dropdown.right{
 	content {
-		transform: translateY(0) translateX(-20%);
+		transform: scaleX(0);
+		transform-origin: left;
 		top: 0;
 		left: 100%;
 		min-height: 100%;/*force height to be size of idropdown title*/

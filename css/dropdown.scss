@@ -1,53 +1,70 @@
 content {
+	//position
 	top: 100%;
 	left: 0;
 	z-index: 100;
 	position: absolute;
 
 	background: var(--shade3);
-	
-	opacity: 0;
-	transform: translateY(-20%);
-	pointer-events: none;
+	transform: scaleY(0);
+	transform-origin: top;
 }
 
 dropdown {
+	--arrow-open: polygon(
+		0 0,
+		100% 0,
+		50% 25%,
+		50% 75%,
+		100% 100%,
+		0 100%,
+		50% 75%,
+		50% 25%);
+	--arrow-closed: polygon(
+		0 25%,
+		100% 25%,
+		50% 75%,
+		50% 75%,
+		50% 75%,
+		50% 75%,
+		50% 75%,
+		50% 75%);
+	
 	position: relative;
 	z-index: 50;
 	display: inline-block;
-
+	
 	label {
 		display: flex;
 	}
 
-	&:hover {
+	&:hover, &:focus-within {//hovered dropdown
 		box-shadow: var(--shadow);
-		& > content {/*show*/
+		& > content {//hovered dropdown > content
 			transform: initial !important;
-			opacity: initial;
-			pointer-events: initial;
 		}
-		&::after {
-			clip-path: polygon(0 0, 100% 0, 50% 25%, 50% 75%, 100% 100%, 0 100%, 50% 75%, 50% 25%);
+		&::after {//hovered dropdown::after
+			clip-path: var(--arrow-open);
 		}
 	}
 
 	&::after {
-		content: ".";/*make content render*/
-
-		float: right;
-
-		width: var(--font-size);
+		//transition
 		transition: 0.5s ease;
 		transition-delay: var(--transition);
-		
-		clip-path: polygon(0 25%, 100% 25%, 50% 75%, 50% 75%, 50% 75%, 50% 75%, 50% 75%, 50% 75%);
+
+		//position
+		float: right;
+		width: var(--font-size);
+
+		content: ".";//make content render
+		margin-right: 0.11vh;//stop from going outside dropdown
+		clip-path: var(--arrow-closed);
 		background: var(--shade3);
-		margin-right: 0.11vh;/*stop from going outside dropdown*/
 	}
 }
 
-#settingsContent > * + * {
+#settings > * > * + * {
 	border-top: 0.25vh solid var(--lighten);
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;

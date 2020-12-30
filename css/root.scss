@@ -1,6 +1,6 @@
 :root {
 	/*genaral vars*/
-	--font-size: 3.5vh;
+	--font-size: 3vh;
 	--shadow: 0 0 0.5vh 0.25vh var(--shade1);
 	/*colours*/
 	--HS-color: 0, 0%;
@@ -9,16 +9,20 @@
 	--shade2: hsl(var(--HS-color), 10%);
 	--lighten: hsla(0, 0%, 100%, 10%);
 	--background-lighten: hsla(var(--HS-color), 20%, 80%);
+	--font-family: none;
 	background: var(--shade2);
 	color: var(--shade1);
 
 	font-size: var(--font-size);
+	font-family:var(--font-size);
 }
 
 * {
+	font-family: var(--font-family);
 	transition: var(--transition);
 	border-radius: var(--border-radius);
 	background: inherit;
+	color: inherit;
 	scroll-behavior: smooth;
 	&:hover {z-index: 8;}
 }

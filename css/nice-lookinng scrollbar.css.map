@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,mBAAmB,CAAC;EACnB,KAAK,EAAE,EAAE;EACT,SAAS,EAAE,GAAG;EAEd,MAAM,EAAE,EAAE;EACV,UAAU,EAAE,GAAG;CACf;;AAED,AAAA,yBAAyB,CAAC;EACzB,UAAU,EAAE,aAAa;EACzB,aAAa,EAAE,oBAAoB;CACnC",
-    "sources": [
-        "nice-lookinng scrollbar.scss"
-    ],
-    "names": [],
-    "file": "nice-lookinng scrollbar.css"
-}
