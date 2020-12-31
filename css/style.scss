@@ -2,7 +2,10 @@ a, button, input[type="submit"] {
 	cursor: pointer;
 	display: inline-block;
 	
-	&:hover {box-shadow: var(--shadow);}
+	&:hover, &:focus {
+		box-shadow: var(--shadow);
+		outline: none;
+	}
 }
 
 form {

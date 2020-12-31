@@ -21,7 +21,7 @@ a.flashy {
 		background: var(--shade3);
 	}
 
-	&:hover::after {
+	&:hover::after, &:focus::after, &:focus-within::after {
 		transform: initial;
 	}
 }

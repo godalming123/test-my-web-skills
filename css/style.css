@@ -3,9 +3,10 @@ a, button, input[type="submit"] {
   display: inline-block;
 }
 
-a:hover, button:hover, input[type="submit"]:hover {
+a:hover, a:focus, button:hover, button:focus, input[type="submit"]:hover, input[type="submit"]:focus {
   -webkit-box-shadow: var(--shadow);
           box-shadow: var(--shadow);
+  outline: none;
 }
 
 form {
