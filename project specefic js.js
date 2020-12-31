@@ -1,4 +1,4 @@
-import * as main from './js/logic.js';
+import * as main from '/importable-css-js/js/logic.js';
 
 //test setting
 main.CreateSetting(
