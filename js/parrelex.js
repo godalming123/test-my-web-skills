@@ -3,10 +3,10 @@ var parrelexs = [];
 
 document.querySelectorAll("*[scroll-speed]").forEach(item => {
 	//set attributes on item
-	item.scrollSpeed = item.getAttribute("scroll-speed");
+	item.translateSpeed = 1 - item.getAttribute("scroll-speed");
 	item.style.zIndex = -1;
 	item.style.position = "relative";
-	item.style.transition = `0s`
+	item.style.transition = "0s";
 	//push item to list
 	parrelexs.push(item);
 })
@@ -16,6 +16,6 @@ window.addEventListener("scroll", function() {
 	distance = window.scrollY;
 
 	parrelexs.forEach (parrelex => {
-		parrelex.style.transform = `translateY(${distance * parrelex.scrollSpeed}px)`
+		parrelex.style.transform = `translateY(${distance * parrelex.translateSpeed}px)`
 	});
 });
