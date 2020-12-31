@@ -18,6 +18,7 @@
 
 * {
   font-family: var(--font-family);
+  font-size: var(--font-size);
   -webkit-transition: var(--transition);
   transition: var(--transition);
   border-radius: var(--border-radius);
