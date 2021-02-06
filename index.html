@@ -39,8 +39,9 @@
 	<!--parrelex functionality-->
 
 	<!--scripts-->
-	<script defer type="module" src="https://godalming123.github.io/importable-css-js/js/create settings.js"></script>
+	<script defer type="module" src="https://godalming123.github.io/importable-css-js/js/create settings.js">settingsContent.classList.add("centered")</script>
 	<script defer type="module" src="https://godalming123.github.io/importable-css-js/js/popup.js"></script>
+	<script src="getMoney.js"></script>
 	<!--fonts-->
 </head>
 
@@ -49,16 +50,16 @@
 		<!--we need to add onclick to all dropdowns inside here so they work on touch-->
 		<dropdown onclick="">
 			my portfoilios
-			<content>
+			<content class="centered">
 				<a target="_blank" class="flashy" href="https://github.com/godalming123">github</a>
 				<a target="_blank" class="flashy"
 					href="https://www.figma.com/file/4jms082w32BUtJtei6gCK4/all-files?node-id=258%3A1595">figma</a>
 			</content>
 		</dropdown>
-
+		
 		<dropdown onclick="">
 			a dropdown
-			<content>
+			<content class="centered">
 				<a show-or-hide=".test-popup">open test popup</a>
 				<a class="disabled">disabled</a>
 				<dropdown class="right">
@@ -87,13 +88,19 @@
 		</div>
 	</section>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quod eligendi provident quasi expedita minima
-		molestias architecto est quidem molestiae a iusto maiores eum, odio accusamus amet nemo libero sed, quae ex fugit.
-		Eaque perferendis tempore veritatis doloribus quidem. Sequi, maiores unde mollitia minima possimus qui saepe
-		blanditiis commodi! Impedit quis natus delectus, id quae aliquid, aspernatur ea ratione ipsam suscipit sit
-		voluptate? Quod unde explicabo, omnis, repellendus at voluptate distinctio repudiandae magnam, quibusdam cupiditate
-		quo? Atque error consequuntur non possimus? Ipsam ea laudantium, deserunt obcaecati est, eius illum placeat, quas
-		iure quasi eos. In repellat iste excepturi voluptates libero.</p>
+	<div>
+		<div class="money form in">	
+			<select class="moneyType"></select>
+			<input type="number" class="moneyNum">
+		</div>
+		
+		=
+
+		<div class="money form out">
+			<select name="moneyType" class="moneyForm"></select>
+			<span class="moneyNum"></span>
+		</div>
+	</div><br>
 
 	<section class="futuristic">
 		<h1>futuristic</h1>
