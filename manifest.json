@@ -1,0 +1,17 @@
+{
+	"name" : "test my web skills",
+	"short_name" : "test",
+	"theme_color" : "black",
+	"display" : "minimal-ui",
+	"orientation" : "portrait",
+	"Scope" : "/",
+	"start_url" : "/",
+	"splash_pages" : null,
+	"icons" : [
+		{
+			"src" : "icon.svg",
+			"type" : "image/svg",
+			"size" : "144x144"
+		}
+	]
+}
